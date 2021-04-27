@@ -1,0 +1,166 @@
+.headerrpa {
+  background-image: url("../../../apps/img/fondo.jpg");
+  background-size: cover;
+  height: 570px;
+  position: relative;
+}
+@media only screen and (min-width: 1200px) {
+  .headerrpa__container {
+    padding: 0 2rem;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .headerrpa__container {
+    padding: 0 8rem;
+  }
+}
+.headerrpa__containertext {
+  position: relative;
+  padding-top: 10rem;
+  z-index: 500;
+  color: white;
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.headerrpa__text {
+  padding: 0;
+}
+.headerrpa__text--color {
+  color: #D42C30;
+}
+.headerrpa__text--size {
+  font-size: 0.7rem;
+}
+.headerrpa::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.menu {
+  padding: 1.5rem 1rem;
+}
+@media only screen and (min-width: 1200px) {
+  .menu {
+    padding: 0;
+  }
+}
+.menu__link {
+  padding-right: 15%;
+}
+@media only screen and (min-width: 576px) {
+  .menu__link {
+    padding-right: 25%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .menu__link {
+    padding-right: 35%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .menu__link {
+    padding-right: 0;
+  }
+}
+.menu__logo {
+  height: 110px;
+}
+@media only screen and (min-width: 576px) {
+  .menu__logo {
+    height: 120px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .menu__logo {
+    height: 130px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .menu__logo {
+    height: 90px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .menu__logo {
+    height: 110px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .menu__logo {
+    height: 140px;
+  }
+}
+.menu__container {
+  padding: 0;
+}
+.menu--color {
+  background-color: #D42C30;
+}
+.menu--des {
+  background-color: #D42C30;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+.menu--tra {
+  background-color: transparent;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+.social__link {
+  color: white;
+}
+.social__link:hover {
+  color: #D42C30;
+}
+.social__link--size {
+  font-size: 2.3rem;
+  margin: 0 0.2rem;
+}
+.social--movil {
+  padding: 0.5rem 0;
+  position: relative;
+  text-align: center;
+  z-index: 100;
+}
+
+.banner {
+  background-color: #D42C30;
+  border-radius: 0.5rem;
+  bottom: -20%;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  left: 10%;
+  padding: 1rem;
+  position: absolute;
+  z-index: 100;
+  width: 80%;
+}
+.banner__container {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.banner__container:last-child {
+  margin-bottom: 0;
+}
+.banner__icon {
+  align-items: center;
+  display: inherit;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+.banner__text {
+  font-size: 0.8rem;
+  margin-bottom: 0;
+}
+
+/*# sourceMappingURL=rpa.css.map */
