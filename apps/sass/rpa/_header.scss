@@ -1,8 +1,12 @@
+/* Inicio de Index */
 .headerrpa{
     background-image: url('../../../apps/img/fondo.jpg');
     background-size: cover;
-    height: 570px;
+    height: 630px;
     position: relative;
+    @include celular{
+        height: 600px;
+    }
     &__container{
         @include desktop-large{
             padding: 0 2rem;
@@ -12,21 +16,36 @@
         }
     }
     &__containertext{
-        position: relative;
-        padding-top: 10rem;
-        z-index: 500;
         color: white;
-        text-align: center;
+        padding-top: 12rem;
         padding-left: 2rem;
         padding-right: 2rem;
+        position: relative;
+        text-align: center;
+        z-index: 500;
+        @include celular{
+            padding-top: 14rem;
+            padding-left: 4rem;
+            padding-right: 4rem;
+        }
+        @include tablet{
+            padding-top: 16rem;
+        }
     }
     &__text{
         padding: 0;
+        @include font-size(3.3rem);
         &--color{
             color: $colorprincipal;
         }
         &--size{
-            font-size: .7rem;
+            @include font-size(.7rem);
+            @include celular{
+                @include font-size(.9rem);
+            }
+            @include desktop-large{
+                @include font-size(1.1rem);
+            }
         }
     }
     &::before{
@@ -44,20 +63,67 @@
     @include desktop-large{
         padding: 0;
     }
+    &__item{
+        width: 40%;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(to right, white, #f2f2f2, $colorprincipal);
+            z-index: 1;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.5s ease-in-out;
+        }
+        &:hover::before{
+            transform: scaleX(1);
+        }
+        @include celular{
+            width: 30%;
+        }
+        @include tablet{
+            width: 20%;
+        }
+        @include desktop{
+            width: 100%;
+        }
+        &--color{
+            &::before{
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                background: linear-gradient(to right, $colorprincipal, $colorprincipal, $colorprincipal);
+                z-index: 1;
+                transform: scaleX(0);
+                transform-origin: left;
+                transition: transform 0.5s ease-in-out;
+            }
+            &:hover::before{
+                transform: scaleX(1);
+            }
+        }
+    }
     &__link{
         padding-right: 15%;
         @include celular{
             padding-right: 25%;
         }
         @include tablet{
-            padding-right: 35%;
+            padding-right: 30%;
         }
         @include desktop{
             padding-right: 0;
         }
     }
     &__logo{
-        height: 110px;
+        height: 100px;
         @include celular{
             height: 120px;
         }
@@ -114,7 +180,7 @@
 .banner{
     background-color: $colorprincipal;
     border-radius: .5rem;
-    bottom: -20%;
+    bottom: -16%;
     color: white;
     margin-left: auto;
     margin-right: auto;
@@ -123,6 +189,12 @@
     position: absolute;
     z-index: 100;
     width: 80%;
+    @include celular{
+        bottom: -13%;
+    }
+    @include tablet{
+        bottom: -12%;
+    }
     &__container{
         display: flex;
         margin-bottom: 1rem;
@@ -141,3 +213,5 @@
         margin-bottom: 0;
     }
 }
+
+/* Fin de Index */

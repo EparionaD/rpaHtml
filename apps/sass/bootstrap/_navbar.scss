@@ -272,7 +272,7 @@
 
       &:hover,
       &:focus {
-        color: $navbar-dark-hover-color;
+        color: white;
       }
 
       &.disabled {
@@ -282,7 +282,35 @@
 
     .show > .nav-link,
     .nav-link.active {
-      color: $navbar-dark-active-color;
+      /*color: $navbar-dark-active-color;*/
+      &::before{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(to right, white, #f2f2f2, #D42C30);
+        z-index: 1;
+        transform: scaleX(1);
+        transform-origin: left;
+        transition: transform 0.5s ease-in-out;
+      }
+      &--color{
+        &::before{
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 2px;
+          background: linear-gradient(to right, #D42C30, #D42C30, #D42C30);
+          z-index: 1;
+          transform: scaleX(1);
+          transform-origin: left;
+          transition: transform 0.5s ease-in-out;
+        }
+      }
     }
   }
 

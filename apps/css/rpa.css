@@ -1,8 +1,14 @@
+/* Inicio de Index */
 .headerrpa {
   background-image: url("../../../apps/img/fondo.jpg");
   background-size: cover;
-  height: 570px;
+  height: 630px;
   position: relative;
+}
+@media only screen and (min-width: 576px) {
+  .headerrpa {
+    height: 600px;
+  }
 }
 @media only screen and (min-width: 1200px) {
   .headerrpa__container {
@@ -15,22 +21,50 @@
   }
 }
 .headerrpa__containertext {
-  position: relative;
-  padding-top: 10rem;
-  z-index: 500;
   color: white;
-  text-align: center;
+  padding-top: 12rem;
   padding-left: 2rem;
   padding-right: 2rem;
+  position: relative;
+  text-align: center;
+  z-index: 500;
+}
+@media only screen and (min-width: 576px) {
+  .headerrpa__containertext {
+    padding-top: 14rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .headerrpa__containertext {
+    padding-top: 16rem;
+  }
 }
 .headerrpa__text {
   padding: 0;
+  font-size: calc(1.455rem + 2.46vw);
+}
+@media (min-width: 1200px) {
+  .headerrpa__text {
+    font-size: 3.3rem;
+  }
 }
 .headerrpa__text--color {
   color: #D42C30;
 }
 .headerrpa__text--size {
   font-size: 0.7rem;
+}
+@media only screen and (min-width: 576px) {
+  .headerrpa__text--size {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .headerrpa__text--size {
+    font-size: 1.1rem;
+  }
 }
 .headerrpa::before {
   content: "";
@@ -50,6 +84,57 @@
     padding: 0;
   }
 }
+.menu__item {
+  width: 40%;
+  position: relative;
+}
+.menu__item::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, white, #f2f2f2, #D42C30);
+  z-index: 1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease-in-out;
+}
+.menu__item:hover::before {
+  transform: scaleX(1);
+}
+@media only screen and (min-width: 576px) {
+  .menu__item {
+    width: 30%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .menu__item {
+    width: 20%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .menu__item {
+    width: 100%;
+  }
+}
+.menu__item--color::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #D42C30, #D42C30, #D42C30);
+  z-index: 1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease-in-out;
+}
+.menu__item--color:hover::before {
+  transform: scaleX(1);
+}
 .menu__link {
   padding-right: 15%;
 }
@@ -60,7 +145,7 @@
 }
 @media only screen and (min-width: 768px) {
   .menu__link {
-    padding-right: 35%;
+    padding-right: 30%;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -69,7 +154,7 @@
   }
 }
 .menu__logo {
-  height: 110px;
+  height: 100px;
 }
 @media only screen and (min-width: 576px) {
   .menu__logo {
@@ -135,7 +220,7 @@
 .banner {
   background-color: #D42C30;
   border-radius: 0.5rem;
-  bottom: -20%;
+  bottom: -16%;
   color: white;
   margin-left: auto;
   margin-right: auto;
@@ -144,6 +229,16 @@
   position: absolute;
   z-index: 100;
   width: 80%;
+}
+@media only screen and (min-width: 576px) {
+  .banner {
+    bottom: -13%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .banner {
+    bottom: -12%;
+  }
 }
 .banner__container {
   display: flex;
@@ -162,5 +257,7 @@
   font-size: 0.8rem;
   margin-bottom: 0;
 }
+
+/* Fin de Index */
 
 /*# sourceMappingURL=rpa.css.map */
