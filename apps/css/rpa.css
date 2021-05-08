@@ -7,7 +7,7 @@
 }
 @media only screen and (min-width: 576px) {
   .headerrpa {
-    height: 600px;
+    height: 620px;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -119,6 +119,16 @@
     width: 100%;
   }
 }
+@media only screen and (min-width: 1200px) {
+  .menu__item {
+    font-size: 1.1rem;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .menu__item {
+    font-size: 1.3rem;
+  }
+}
 .menu__item--color::before {
   content: "";
   position: absolute;
@@ -151,6 +161,8 @@
 @media only screen and (min-width: 992px) {
   .menu__link {
     padding-right: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 }
 .menu__logo {
@@ -178,7 +190,7 @@
 }
 @media only screen and (min-width: 1400px) {
   .menu__logo {
-    height: 140px;
+    height: 120px;
   }
 }
 .menu__container {
@@ -210,11 +222,45 @@
   font-size: 2.3rem;
   margin: 0 0.2rem;
 }
+.social__link--desktop {
+  padding-right: 0.5rem;
+}
+.social__link--desktop:last-child {
+  padding-right: 0;
+}
+@media only screen and (min-width: 992px) {
+  .social__link--desktop {
+    font-size: 1.1rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .social__link--desktop {
+    font-size: 1.25rem;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .social__link--desktop {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .social__link--desktop {
+    font-size: 1.6rem;
+  }
+}
+.social__container {
+  display: inherit;
+  justify-content: center;
+  width: 100%;
+}
 .social--movil {
   padding: 0.5rem 0;
   position: relative;
   text-align: center;
   z-index: 100;
+}
+.social--desktop {
+  align-items: center;
 }
 
 .banner {
@@ -232,12 +278,38 @@
 }
 @media only screen and (min-width: 576px) {
   .banner {
-    bottom: -13%;
+    bottom: -14%;
   }
 }
 @media only screen and (min-width: 768px) {
   .banner {
+    bottom: -13%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .banner {
+    bottom: -11%;
+    left: 5%;
+    padding: 2.5rem;
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .banner {
     bottom: -12%;
+    padding: 2.5rem;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .banner {
+    bottom: -14%;
+    padding: 3rem;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .banner {
+    bottom: -13.5%;
+    padding: 3.5rem;
   }
 }
 .banner__container {
@@ -247,17 +319,61 @@
 .banner__container:last-child {
   margin-bottom: 0;
 }
+@media only screen and (min-width: 992px) {
+  .banner__container {
+    width: 33%;
+    margin-bottom: 0;
+  }
+}
 .banner__icon {
   align-items: center;
   display: inherit;
   font-size: 1.5rem;
   margin-right: 1rem;
 }
+@media only screen and (min-width: 992px) {
+  .banner__icon {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .banner__icon {
+    font-size: 2.2rem;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .banner__icon {
+    font-size: 2.4rem;
+  }
+}
 .banner__text {
   font-size: 0.8rem;
   margin-bottom: 0;
 }
+@media only screen and (min-width: 992px) {
+  .banner__text {
+    display: inherit;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .banner__text {
+    font-size: 1rem;
+    display: inherit;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .banner__text {
+    font-size: 1.2rem;
+    display: inherit;
+    align-items: center;
+  }
+}
 
 /* Fin de Index */
+.inicio {
+  margin-top: 10rem;
+}
 
 /*# sourceMappingURL=rpa.css.map */

@@ -4165,7 +4165,7 @@ textarea.form-control-lg {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%;
+  width: 93%;
   height: 2px;
   background: linear-gradient(to right, white, #f2f2f2, #D42C30);
   z-index: 1;
@@ -4179,7 +4179,7 @@ textarea.form-control-lg {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%;
+  width: 93%;
   height: 2px;
   background: linear-gradient(to right, #D42C30, #D42C30, #D42C30);
   z-index: 1;

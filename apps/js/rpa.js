@@ -11,10 +11,31 @@ function agregarColor(){
             setTimeout(() => {
                 addColor.classList.remove("menu--tra");
             }, 500);
+            agregarActive()
         }
         else{
             let addColor = document.getElementById('navigation');
             addColor.classList.add("menu--color","menu--des")
+            quitarActive()
+        }
+    }
+}
+
+function agregarActive(){
+    let efecto = document.getElementsByClassName("menu__item");
+    for (let i = 0; i < efecto.length; i++) {
+        efecto[i].classList.add('menu__item--color')
+        if(efecto[i].classList.contains('active')){
+            efecto[i].classList.add('active--color')
+        }
+    }
+}
+function quitarActive(){
+    let efecto = document.getElementsByClassName("menu__item");
+    for (let i = 0; i < efecto.length; i++) {
+        efecto[i].classList.remove('menu__item--color')
+        if(efecto[i].classList.contains('active')){
+            efecto[i].classList.remove('active--color')
         }
     }
 }
@@ -26,14 +47,7 @@ window.onscroll = function(){
         boton.removeAttribute('onclick','agregarColor()')
         document.getElementById("navigation").classList.add('menu--color','menu--des');
 
-        let efecto = document.getElementsByClassName("menu__item");
-        for (let i = 0; i < efecto.length; i++) {
-            efecto[i].classList.remove('menu__item--color')
-            if(efecto[i].classList.contains('active')){
-                efecto[i].classList.remove('active--color')
-                console.log('no tiene')
-            }
-        }
+        quitarActive()
 
     }else{
         boton.setAttribute('onclick','agregarColor()')
@@ -43,25 +57,6 @@ window.onscroll = function(){
             document.getElementById("navigation").classList.remove('menu--tra');
         }, 100);
 
-        let efecto = document.getElementsByClassName("menu__item");
-        if(window.innerWidth >=992){
-            for (let i = 0; i < efecto.length; i++) {
-                efecto[i].classList.add('menu__item--color')
-                if(efecto[i].classList.contains('active')){
-                    efecto[i].classList.add('active--color')
-                    console.log('si tiene active')
-                }
-            }
-        }
+        agregarActive()
     }
 }
-
-/*if(window.innerWidth >=992){
-    let efecto = document.getElementsByClassName("menu__item");
-    for (let i = 0; i < efecto.length; i++) {
-        if(efecto[i].classList.contains('active')){
-            efecto[i].classList.add('active--color')
-            console.log('si tiene active')
-        }
-    }
-}*/

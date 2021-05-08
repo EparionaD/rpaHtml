@@ -5,7 +5,7 @@
     height: 630px;
     position: relative;
     @include celular{
-        height: 600px;
+        height: 620px;
     }
     &__container{
         @include desktop-large{
@@ -91,6 +91,12 @@
         @include desktop{
             width: 100%;
         }
+        @include desktop-large{
+            font-size: 1.1rem;
+        }
+        @include desktop-xxlarge{
+            font-size: 1.3rem;
+        }
         &--color{
             &::before{
                 content: '';
@@ -120,6 +126,8 @@
         }
         @include desktop{
             padding-right: 0;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
         }
     }
     &__logo{
@@ -137,7 +145,7 @@
             height: 110px;
         }
         @include desktop-xlarge{
-            height: 140px;
+            height: 120px;
         }
     }
     &__container{
@@ -169,12 +177,39 @@
             font-size: 2.3rem;
             margin: 0 .2rem;
         }
+        &--desktop{
+            padding-right: .5rem;
+            &:last-child{
+                padding-right: 0;
+            }
+            @include desktop{
+                font-size: 1.1rem;
+            }
+            @include desktop-large{
+                font-size: 1.25rem;
+            }
+            @include desktop-xlarge{
+                font-size: 1.4rem;
+            }
+            @include desktop-xxlarge{
+                font-size: 1.6rem;
+            }
+        }
+    }
+    &__container{
+        display: inherit;
+        justify-content: center;
+        width: 100%;
+
     }
     &--movil{
         padding: .5rem 0;
         position: relative;
         text-align: center;
         z-index: 100;
+    }
+    &--desktop{
+        align-items: center;
     }
 }
 .banner{
@@ -190,15 +225,37 @@
     z-index: 100;
     width: 80%;
     @include celular{
-        bottom: -13%;
+        bottom: -14%;
     }
     @include tablet{
+        bottom: -13%;
+    }
+    @include desktop{
+        bottom: -11%;
+        left: 5%;
+        padding: 2.5rem;
+        width: 90%;
+    }
+    @include desktop-large{
         bottom: -12%;
+        padding: 2.5rem;
+    }
+    @include desktop-xlarge{
+        bottom: -14%;
+        padding: 3rem;
+    }
+    @include desktop-xxlarge{
+        bottom: -13.5%;
+        padding: 3.5rem;
     }
     &__container{
         display: flex;
         margin-bottom: 1rem;
         &:last-child{
+            margin-bottom: 0;
+        }
+        @include desktop{
+            width: 33%;
             margin-bottom: 0;
         }
     }
@@ -207,10 +264,33 @@
         display: inherit;
         font-size: 1.5rem;
         margin-right: 1rem;
+        @include desktop{
+            font-size: 2rem;
+        }
+        @include desktop-large{
+            font-size: 2.2rem;
+        }
+        @include desktop-xlarge{
+            font-size: 2.4rem;
+        }
     }
     &__text{
-        font-size: .8rem;
+        @include font-size(.8rem);
         margin-bottom: 0;
+        @include desktop{
+            display: inherit;
+            align-items: center;
+        }
+        @include desktop-large{
+            @include font-size(1rem);
+            display: inherit;
+            align-items: center;
+        }
+        @include desktop-xlarge{
+            @include font-size(1.2rem);
+            display: inherit;
+            align-items: center;
+        }
     }
 }
 
