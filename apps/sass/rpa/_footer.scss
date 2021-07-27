@@ -1,0 +1,138 @@
+.pie-pagina{
+    &__container{
+        background-color: $colorprincipal;
+        padding: 2.5rem 0;
+        @include desktop{
+            padding: 2.5rem 4.5rem;
+        }
+        @include desktop-large{
+            padding: 2.5rem 5.5rem;
+        }
+        @include desktop-xlarge{
+            padding: 2.5rem 6.5rem;
+        }
+        @include desktop-xlarge{
+            padding: 2.5rem 7.5rem;
+        }
+    }
+    &__contact{
+        @include desktop{
+            width: 40%;
+        }
+    }
+    &__element{
+        list-style: none;
+    }
+    &__email{
+        color: white;
+        text-decoration: none;
+        @include font-size(.9rem);
+        &:hover{
+            color:$colorprincipaloscuro;
+        }
+        @include desktop-large{
+            @include font-size(1rem);
+        }
+        @include desktop-xlarge{
+            @include font-size(1.2rem);
+        }
+    }
+    &__icon{
+        margin-right: .5rem;
+        @include font-size(1.2rem);
+    }
+    &__information{
+        display: flex;
+        flex-direction: column;
+        @include desktop{
+            flex-direction: row;
+            margin-top: 7rem;
+            padding-left: 1.5rem;
+        }
+        @include desktop-large{
+            padding-left: 3rem;
+        }
+    }
+    &__list{
+        padding-left: 0;
+    }
+    &__link{
+        color: white;
+        text-decoration: none;
+        &:hover{
+            color: white;
+        }
+        @include desktop-large{
+            @include font-size(1rem);
+        }
+        @include desktop-xlarge{
+            @include font-size(1.2rem);
+        }
+    }
+    &__logo{
+        height: 80px;
+    }
+    &__menu{
+        @include desktop{
+            width: 40%;
+        }
+        @include desktop-large{
+            width: 35%;
+        }
+    }
+    &__office{
+        color: white;
+        margin-bottom: 0;
+        @include font-size(.9rem);
+        @include desktop-large{
+            @include font-size(1rem);
+        }
+        @include desktop-xlarge{
+            @include font-size(1.2rem);
+        }
+    }
+    &__social{
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+        @include desktop{
+            justify-content: left;
+        }
+    }
+    &__text{
+        color: white;
+        margin: 2rem 0;
+        @include font-size(.9rem);
+        @include desktop-xlarge{
+            width: 80%;
+        }
+        @include desktop-xxlarge{
+            width: 70%;
+        }
+    }
+    &__title{
+        color: white;
+    }
+}
+.appreciation{
+    background-image: url('../../../apps/img/footer/reconocimientos.jpg');
+    background-size: cover;
+    height: 200px;
+    position: relative;
+    &::before{
+        content: "";
+        position:absolute;
+        bottom:0;
+        left:0;
+        width:100%;
+        height:100%;
+        background:rgba(0,0,0,.5);
+    }
+    &__container{
+        text-align: center;
+        z-index: 100;
+    }
+    &__title{
+        color: white;
+    }
+}

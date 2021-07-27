@@ -1,0 +1,132 @@
+.especialidades{
+    background-color: $colorsecundario;
+    padding: 0;
+    &__container{
+        padding: 0 1.5rem;
+        @include celular{
+            padding: 0 4rem;
+        }
+        @include tablet{
+            padding: 0 8rem;
+        }
+        @include desktop-large{
+            padding: 0 12rem;
+        }
+        @include desktop-xlarge{
+            padding: 0 16rem;
+        }
+        @include desktop-xxlarge{
+            padding: 0 22rem;
+        }
+    }
+    &__section{
+        padding: 3rem 0;
+        @include desktop{
+            padding: 6rem 0;
+        }
+    }
+}
+.espec-detalle{
+    &__back{
+        background-color: $colorprincipal;
+        border-top-left-radius: .5rem;
+        border-top-right-radius: .5rem;
+        height: $altback;
+        @include celular{
+            height: calc(#{$altback} + (#{$altback} * 0.1));
+        }
+        @include tablet{
+            height: calc(#{$altback} + (#{$altback} * 0.2));
+        }
+        @include desktop{
+            border-top-right-radius: 0;
+            border-bottom-left-radius: .5rem;
+            height: auto;
+        }
+        &--side{
+            @include desktop{
+                border-top-right-radius: .5rem;
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: .5rem;
+                height: auto;
+            }
+        }
+    }
+    &__container-img{
+        @include desktop{
+            top: 50% !important;
+            left: 100% !important;
+            transform: translate(-50%, -50%) !important;
+        }
+        &--side{
+            @include desktop{
+                top: 50% !important;
+                left: 0% !important;
+                transform: translate(-50%, -50%) !important;
+            }
+        }
+    }
+    &__container-text{
+        padding: 4rem 1.5rem 1.5rem 1.5rem;
+        border-bottom-left-radius: .5rem;
+        border-bottom-right-radius: .5rem;
+        @include desktop{
+            border-bottom-left-radius: 0;
+            border-top-right-radius: .5rem;
+            padding-left: 5.5rem;
+            padding-top: 1.5rem;
+        }
+        @include desktop-xxlarge{
+            padding: 2rem 2rem 2rem 8rem;
+        }
+        &--side{
+            @include desktop{
+                border-bottom-left-radius: .5rem;
+                border-bottom-right-radius: 0;
+                border-top-right-radius: 0;
+                border-top-left-radius: .5rem;
+                padding: 2rem 5.5rem 2rem 2rem;
+            }
+            @include desktop-xxlarge{
+                border-bottom-left-radius: .5rem;
+                border-bottom-right-radius: 0;
+                border-top-right-radius: 0;
+                border-top-left-radius: .5rem;
+                padding: 2rem 8rem 2rem 2rem;
+            }
+        }
+    }
+    &__img{
+        border: 3px solid white;
+        height: $imgespec;
+        width: $imgespec;
+        @include celular{
+            height: calc(#{$imgespec} + (#{$imgespec} * 0.2));
+            width: calc(#{$imgespec} + (#{$imgespec} * 0.2));
+        }
+        @include tablet{
+            height: calc(#{$imgespec} + (#{$imgespec} * 0.3));
+            width: calc(#{$imgespec} + (#{$imgespec} * 0.3));
+        }
+        @include desktop{
+            height: calc(#{$imgespec} + (#{$imgespec} * 0.4));
+            width: calc(#{$imgespec} + (#{$imgespec} * 0.4));
+        }
+        @include desktop-xxlarge{
+            height: calc(#{$imgespec} + (#{$imgespec} * 0.6));
+            width: calc(#{$imgespec} + (#{$imgespec} * 0.6));
+        }
+    }
+    &__text{
+        @include desktop-xlarge{
+            font-size: 1.05rem;
+        }
+    }
+    &__title{
+        @include desktop-xlarge{
+            font-size: 1.35rem;
+        }
+    }
+    
+}

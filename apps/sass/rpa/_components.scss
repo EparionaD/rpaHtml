@@ -1,0 +1,363 @@
+.btn-rpa{
+    width: max-content;
+}
+.portada{
+    padding-top: 16rem;
+    z-index: 110;
+    @include celular{
+        padding-top: 20rem;
+    }
+    @include tablet{
+        padding-top: 20rem;
+    }
+    @include desktop{
+        padding-left: 6rem;
+        padding-top: 22rem;
+        width: 55%;
+    }
+    @include desktop-large{
+        padding-left: 8rem;
+    }
+    @include desktop-xlarge{
+        padding-left: 8rem;
+        padding-top: 24rem;
+    }
+    @include desktop-xxlarge{
+        padding-left: 10rem;
+        padding-top: 32rem;
+    }
+    &__link{
+        color: white;
+        text-decoration: none;
+        &:hover{
+            color: $colorprincipal;
+        }
+        @include font-size(2.5rem);
+    }
+    &__text{
+        font-size: .9rem;
+        @include tablet{
+            font-size: 1rem;
+        }
+    }
+    &--publicaciones{
+        padding-top: 16rem;
+        @include celular{
+            padding-top: 18rem;
+        }
+        @include tablet{
+            padding-top: 20rem;
+        }
+        @include desktop{
+            padding-left: 6rem;
+            padding-top: 16rem;
+            width: 85%;
+        }
+        @include desktop-large{
+            padding-left: 8rem;
+            padding-top: 18rem;
+        }
+        @include desktop-xlarge{
+            width: 75%;
+        }
+        @include desktop-xxlarge{
+            padding-left: 10rem;
+            padding-top: 24rem;
+            width: 65%;
+        }
+    }
+    &--alto{
+        padding-top: 14rem;
+        @include celular{
+            padding-top: 16rem;
+        }
+        @include tablet{
+            padding-top: 18rem;
+        }
+        @include desktop{
+            padding-left: 6rem;
+            padding-top: 14rem;
+            width: 85%;
+        }
+        @include desktop-large{
+            padding-left: 8rem;
+            padding-top: 16rem;
+        }
+        @include desktop-xlarge{
+            width: 75%;
+        }
+        @include desktop-xxlarge{
+            padding-left: 10rem;
+            padding-top: 22rem;
+            width: 65%;
+        }
+    }
+    &--equipo{
+        @include desktop{
+            padding-left: 6rem;
+            padding-top: 26rem;
+            width: 55%;
+        }
+        @include desktop-large{
+            padding-left: 8rem;
+        }
+        @include desktop-xlarge{
+            padding-left: 8rem;
+            padding-top: 28rem;
+        }
+        @include desktop-xxlarge{
+            padding-left: 10rem;
+            padding-top: 34rem;
+        }
+    }
+    &--actualidad{
+        padding-top: 22rem;
+        @include desktop{
+            padding-left: 6rem;
+            padding-top: 18rem;
+            width: 65%;
+        }
+        @include desktop-large{
+            padding-left: 8rem;
+            padding-top: 20rem;
+        }
+        @include desktop-xlarge{
+            padding-left: 8rem;
+            padding-top: 20rem;
+        }
+        @include desktop-xxlarge{
+            padding-left: 10rem;
+            padding-top: 30rem;
+        }
+    }
+}
+.espaciado{
+    background-color: $colorsecundario;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    @include celular{
+        padding: 6rem 6rem;
+    }
+    @include tablet{
+        padding: 6rem 8rem;
+    }
+    @include desktop-large{
+        padding: 6rem 12rem;
+    }
+    @include desktop-xlarge{
+        padding: 6rem 14rem;
+    }
+    @include desktop-xxlarge{
+        padding: 6rem 18rem;
+    }
+    &--catedra{
+        // background-color: $colorprincipal;
+        background-image: linear-gradient(to top, #eaeaea, #dadada, #cacaca, #bababa, #ababab);
+    }
+}
+.bg-catedra{
+    background-color: $colorsecundario;
+}
+.espaciado-catedra{
+    background-color: $colorsecundario;
+    @include celular{
+        padding: 0rem 2rem;
+    }
+    @include tablet{
+        padding: 0rem 2rem;
+    }
+    @include desktop{
+        padding: 0rem 6rem;
+    }
+    @include desktop-large{
+        padding: 0rem 12rem;
+    }
+    @include desktop-xlarge{
+        padding: 0rem 14rem;
+    }
+    @include desktop-xxlarge{
+        padding: 0rem 18rem;
+    }
+    &--catedra{
+        // background-color: $colorprincipal;
+        background-image: linear-gradient(to top, #eaeaea, #dadada, #cacaca, #bababa, #ababab);
+    }
+}
+.component-tab{
+    &__ul{
+        border-top-left-radius: .5rem;
+        border-top-right-radius: .5rem;
+        @include desktop{
+            width: max-content;
+        }
+    }
+}
+.social{
+    &__link{
+        color: white;
+        &:hover{
+            color: $colorprincipal;
+        }
+        &--desktop{
+            padding-right: .5rem;
+            &:last-child{
+                padding-right: 0;
+            }
+            @include desktop{
+                font-size: 1.1rem;
+            }
+            @include desktop-large{
+                font-size: 1.25rem;
+            }
+            @include desktop-xlarge{
+                font-size: 1.4rem;
+            }
+            @include desktop-xxlarge{
+                font-size: 1.6rem;
+            }
+        }
+        &--color{
+            &:hover{
+                color: $colorprincipaloscuro;
+            }
+        }
+        &--size{
+            font-size: 2.3rem;
+            margin: 0 .2rem;
+        }
+        &--detailpubli{
+            font-size: 1.7rem;
+            @include desktop{
+                font-size: 1.3rem;
+            }
+            &:hover{
+                color: $colorprincipaloscuro;
+            }
+        }
+    }
+    &__container{
+        display: inherit;
+        justify-content: center;
+        width: 100%;
+
+    }
+    &--movil{
+        padding: .5rem 0;
+        position: absolute;
+        text-align: center;
+        top: 80%;
+        z-index: 100;
+    }
+    &--desktop{
+        align-items: center;
+    }
+}
+.share{
+    display: flex;
+    align-items: center;
+    &__button{
+        margin-right: 1.3rem;
+        @include desktop{
+            margin-right: 0;
+        }
+        &--detailpubli{
+            border: 1px solid white;
+        }
+        &--category{
+            font-size: .8rem;
+            padding-right: calc(var(--bs-gutter-x) / 2);
+            padding-left: calc(var(--bs-gutter-x) / 2);
+            width: max-content;
+        }
+    }
+    &__icon{
+        font-size: 2rem;
+        &--facebook{
+            &:hover{
+                color: #3B5998;
+            }
+        }
+        &--twitter{
+            &:hover{
+                color: #00ACEE;
+            }
+        }
+        &--linkedin{
+            &:hover{
+                color: #0E76A8;
+            }
+        }
+        &--whatsapp{
+            &:hover{
+                color: #25D366;
+            }
+        }
+        &--link{
+            &:hover{
+                color: #FFB000;
+            }
+        }
+        &--actualidad{
+            @include desktop{
+                font-size: 1.3rem;
+            }
+            @include desktop-xxlarge{
+                font-size: 2rem;
+            }
+        }
+    }
+    &__link{
+        margin-right: .5rem;
+        color: $colorsecundariooscuro;
+        &:nth-last-child(1){
+            margin-right: 0;
+        }
+        &--equipo{
+            margin-right: 1rem;
+            &:nth-last-child(1){
+                margin-right: 0;
+            }
+        }
+    }
+    &--actualidad{
+        justify-content: end;
+    }
+    &--desktop{
+        margin: 1rem 0;
+        justify-content: start;
+    }
+}
+.button-plus{
+    text-align: right;
+}
+.link-copy{
+    top: 85%;
+}
+.img-alto{
+    @include desktop{
+        height: 236px;
+    }
+    @include desktop-large{
+        height: 262px;
+    }
+    @include desktop-xlarge{
+        height: 308px;
+    }
+    @include desktop-xlarge{
+        height: 284px;
+    }
+}
+.card-alto{
+    @include desktop{
+        height: 672px;
+    }
+    @include desktop-large{
+        height: 645px;
+    }
+    @include desktop-xlarge{
+        height: 645px;
+    }
+    @include desktop-xlarge{
+        height: 665px;
+    }
+}

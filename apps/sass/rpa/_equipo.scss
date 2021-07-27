@@ -1,0 +1,99 @@
+.card-equipo{
+    &__stick{
+        @include desktop{
+            position: sticky !important;
+            top: 12rem;
+        }
+    }
+    &__bio{
+        background-color: white;
+    }
+    &__body{
+        height: $altbodycard;
+        width: 100%;
+        @include tablet{
+            height: calc(#{$altbodycard} + (#{$altbodycard} * 0.1));
+        }
+        @include desktop{
+            height: calc(#{$altbodycard} - (#{$altbodycard} * 0.3));
+        }
+        @include desktop-xlarge{
+            height: calc(#{$altbodycard} - (#{$altbodycard} * 0.2));
+        }
+        @include desktop-xxlarge{
+            height: calc(#{$altbodycard} + (#{$altbodycard} * 0.1));
+        }
+
+    }
+    &__contact{
+        background-color: white;
+    }
+    &__container{
+        height: inherit;
+    }
+    &__data{
+        @include desktop{
+            @include font-size(.8rem);
+        }
+        @include desktop-xlarge{
+            @include font-size(1rem);
+        }
+        &--email{
+            color: black;
+            text-decoration: none;
+        }
+    }
+    &__description{
+        background-color: white;
+        border-bottom-left-radius: .5rem;
+        border-bottom-right-radius: .5rem;
+        clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);
+        padding: 1.5rem;
+        &--detalle{
+            clip-path: polygon(0 25%, 100% 25%, 100% 100%, 0% 100%);
+        }
+    }
+    &__icon{
+        font-size: 2.3rem;
+        color: white;
+        padding: .5rem .6rem;
+        border-radius: 50%;
+        background-color: $colorprincipal;
+        &:hover{
+            background-color: $colorprincipaloscuro;
+        }
+        @include desktop{
+            font-size: 1.5rem;
+            padding: .4rem .5rem;
+        }
+        @include desktop-xlarge{
+            font-size: 1.8rem;
+            padding: .4rem .5rem;
+        }
+        @include desktop-xxlarge{
+            font-size: 2.3rem;
+            padding: .5rem .6rem;
+        }
+    }
+    &__link{
+        left: 85%;
+        top: 3%;
+    }
+    &__name{
+        @include desktop{
+            @include font-size(1rem);
+        }
+        @include desktop-xlarge{
+            @include font-size(1.3rem);
+        }
+        @include desktop-xxlarge{
+            @include font-size(2.5rem);
+        }
+    }
+    &__title{
+        @include font-size(1.8rem);
+        @include desktop-xxlarge{
+            @include font-size(2.5rem);
+        }
+    }
+}

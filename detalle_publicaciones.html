@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio | RPA</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./apps/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./apps/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./apps/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./apps/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./apps/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="./apps/css/bootstrap.css">
+    <link rel="stylesheet" href="./apps/css/rpa.css">
+</head>
+<body>
+    <header class="container-fluid headerrpa headerrpa--equipo">
+        <div class="row fixed-top headerrpa__container" id="navigation">
+            <div class="col-12 col-lg-10 headerrpa__nav">
+                <nav class="navbar navbar-expand-lg navbar-dark menu">
+                    <div class="container-fluid menu__container">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-contenido-rpa" aria-controls="menu-contenido-rpa" aria-expanded="false" aria-label="Toggle navigation" id="clicMenu" onclick="agregarColor()">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <a class="navbar-brand menu__link" href="#">
+                            <img class="menu__logo" src="./apps/img/logo/logo-simple.png" alt="Logo RPA">
+                        </a>
+                        <div class="collapse navbar-collapse" id="menu-contenido-rpa">
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                <li class="nav-item menu__list">
+                                    <a class="nav-link menu__item active active--color" aria-current="page" href="#">La firma</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link menu__item menu__item--color" href="#">Especialidades</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link menu__item menu__item--color" href="#">Equipo</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link menu__item menu__item--color" href="#">Publicaciones</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link menu__item menu__item--color" href="#">Actualidad</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link menu__item menu__item--color" href="#">Cátedra</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link menu__item menu__item--color" href="#">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-12 col-lg-2 social social--desktop d-none d-lg-inline-flex">
+                <div class="social__container">
+                    <a class="social__link social__link--desktop" href=""><i class="fab fa-facebook-square"></i></a>
+                    <a class="social__link social__link--desktop" href=""><i class="fab fa-twitter-square"></i></a>
+                    <a class="social__link social__link--desktop" href=""><i class="fab fa-facebook-messenger"></i></a>
+                    <a class="social__link social__link--desktop" href=""><i class="fab fa-whatsapp"></i></a>
+                    <a class="social__link social__link--desktop" href=""><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="row position-relative portada portada--publicaciones">
+            <div class="share mb-4">
+                <a href="#" class="btn btn-primary share__button share__button--category">ARTÍCULOS</a>
+            </div>
+            <!-- <h1 class="text-white fw-bold portada__title">Pleno del Congreso aprobó por insistencia ley que elimina el régimen CAS</h1> -->
+            <a class="fw-bold lh-sm portada__link" href="">El delito de abuso de autoridad. Consideraciones dogmáticas y político criminales</a>
+            <!-- <div class="text-white portada__text">
+                En un Estado democrático de Derecho, el poder nunca es absoluto, sino más bien limitado. En ese sentido, cuando los funcionarios públicos se exceden en sus funciones o atribuciones, corresponde una reacción de parte del ordenamiento
+            </div> -->
+            <div class="share mt-4">
+                <a href="#" class="btn btn-primary share__button"><i class="fas fa-file-download"></i> Descargar</a>
+                <a class="social__link social__link--size" href=""><i class="fab fa-facebook-square"></i></a>
+                <a class="social__link social__link--size" href=""><i class="fab fa-twitter-square"></i></a>
+                <a class="social__link social__link--size" href=""><i class="fab fa-facebook-messenger"></i></a>
+                <a class="social__link social__link--size" href=""><i class="fab fa-whatsapp"></i></a>
+                <a class="social__link social__link--size" href=""><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </header>
+    <main class="container-fluid espaciado">
+        <div class="row">
+            <div class="col-12 col-lg-9 mb-3 mb-lg-0">
+                <div class=" publicacion-contenido rounded">
+                    <div class="p-4">
+                        I. PRELIMINARES <br>
+
+                        En democracia se reconoce que el ciudadano tiene derechos fundamentales superiores y anteriores al mismo Estado. En una democracia, el poder del Estado frente a los ciudadanos debe ser ejercido con racionalidad y límites. Por ello, el control de la actuación del funcionario público en el ejercicio de funciones públicas ha sido siempre objeto de preocupación de los Estados.
+
+                        Como parte de los esfuerzos por la materialización del principio del ejercicio de poder con límites, nuestro ordenamiento jurídico ha previsto una regulación que sanciona el abuso en el ejercicio de funciones públicas en que incurre –con frecuencia– el funcionario público. La respuesta inicial no es, sin embargo, la sanción penal, sino una sanción administrativa-disciplinaria. Esto es correcto, pues la sanción penal, materializada en el delito de abuso de autoridad, solo debe proceder cuando el abuso de funciones sea realmente grave y perjudique en igual magnitud a una persona.
+
+                        Esta fundamentación de la regulación legal permite entender que la sanción penal del abuso de autoridad es subsidiaria, que la titularidad del bien jurídico es preponderantemente del particular, que el sujeto pasivo es primariamente el ciudadano y no el Estado, como tradicionalmente se entiende, y que la interpretación de los distintos elementos del tipo penal debe ser realizada siempre restrictivamente. En este marco, el presente trabajo tiene por objeto hacer una revisión dogmática y políticocriminal del delito de abuso de autoridad previsto en el artículo 376 de nuestro Código Penal. <br>
+
+                        II. CONSIDERACIONES GENERALES Y DESARROLLO LEGISLATIVO <br>
+
+                        El Código Penal de 1924 ya regulaba en su artículo 337 el delito de abuso de autoridad con el siguiente tenor: “El funcionario público que abusando de sus funciones ordenara o cometiere en perjuicio de otro un acto arbitrario cualquiera, no clasificado especialmente en la ley penal, será reprimido con prisión no mayor de dos años e inhabilitación, conforme a los incisos 1 y 3 del artículo 27, por doble tiempo de la condena”.
+
+                        El Código Penal de 1991 mantuvo el delito en el artículo 376 bajo la siguiente descripción típica: “El funcionario público que, abusando de sus atribuciones, comete u ordena, en perjuicio de alguien, un acto arbitrario cualquiera, será reprimido con pena privativa de libertad no mayor de dos años”. En el año 2004 se introdujo en el tipo una circunstancia agravante que prescribía: “[…] Cuando los hechos deriven de un procedimiento de cobranza coactiva, la pena será no menor de dos ni mayor de cuatro años”[1].
+
+                        Posteriormente, el 3 de agosto de 2010, la Corte Suprema de Justicia presentó ante el Congreso de la República el “Proyecto de Ley de Reforma de los Delitos contra la Administración Pública”, signado con el número 4187-2010/PJ, en el cual proponía una serie de cambios en la regulación de determinados delitos contra la Administración Pública, entre los cuales se encontraba la modificación del delito de abuso de autoridad.
+
+                        El texto del artículo 376 propuesto por la Corte Suprema señalaba: “El funcionario público que, abusando de sus atribuciones, comete u ordena un acto arbitrario que cause un grave perjuicio a alguien será reprimido con pena privativa de libertad no menor de tres años. Si los hechos derivan de un procedimiento de cobranza coactiva, la pena privativa de libertad será no menor de dos[2] ni mayor de cuatro años”. La reforma propuesta fue justificada así:
+
+                        “El tipo penal de abuso de autoridad genérico, previsto en el artículo 376°, es reformulado al sustituirse la frase «acto arbitrario cualquiera», por la de «acto arbitrario que cause un grave perjuicio a alguien». El cambio no es meramente terminológico; tiene relación con la observancia del principio de subsidiaridad y fragmentariedad. El Derecho penal solo puede ocuparse de las conductas más graves, circunstancia que no sólo está vinculada al abuso funcional del agente, sino también a que el acto abusivo sea realmente gravoso para el sujeto pasivo. Toda otra conducta que no tenga la suficiente entidad puede ser abordada perfectamente por otras disciplinas del Derecho, como por ejemplo el Derecho administrativo disciplinario. En consonancia con la cláusula de gravedad, se propone aumentar la pena conminada máxima en un año (tres años de privación de libertad)”[3].
+
+                        La propuesta de la Corte Suprema fue sometida a examen en la Comisión de Justicia y Derechos Humanos del Congreso de la República, que emitió un Dictamen proponiendo un texto sustitutorio que aprobaba solo parcialmente la propuesta inicial de la Corte Suprema. El cambio fue justificado así:
+
+                        “Es correcto eliminar la indeterminada alusión al acto arbitrario cualquiera, de modo que la regulación de la arbitrariedad derivada del acto funcional abusivo cometido por el funcionario prescinda del adjetivo cualquiera. Ello le permite al operador jurídico una mejor pauta de interpretación del acto arbitrario en su relación con el acto abusivo y el perjuicio ocasionado a tercera persona. El criterio de la gravedad del perjuicio, trae obviamente problemas de definición, pues al ser el art. 376 un tipo genérico y subsidiario, es difícil el contenido y los límites de la gravedad.
+                        No obstante, debe entenderse que los casos de perjuicio no grave son materia de dilucidación administrativa, en invocación del principio de última ratio que orienta la injerencia punitiva. Es bueno precisar, igualmente, que al someterse a la valoración de grave la conducta abusiva por parte del funcionario público, ello podría permitir que conductas realmente graves puedan quedar impunes toda vez que será el justiciable quien deba probar en vía de investigación preliminar y en la investigación preparatoria (conforme el Nuevo Código Procesal Penal), el carácter grave de su perjuicio, con lo que se estaría invirtiendo obligaciones probatorias por quien denuncia un hecho y termina siendo frustrado en sus expectativas de justicia material. Ello dado que el Ministerio Público pocas veces asume un rol eficiente en la carga de la prueba y termina siendo el justiciable quien deba asumir ese rol a través de institutos procesales como el de la constitución en actor civil (conforme el Código Procesal Penal de 2004 –art. 96 y ss.–). Razón por la cual se prescinde de esta acotación efectuada al perjuicio”.
+
+                        Finalmente, la propuesta de la Comisión de Justicia fue aprobada por el Pleno del Congreso y se convirtió en la Ley 29703 el 10 junio de 2011. El texto legal que estatuyó el nuevo –y hoy vigente– artículo 376 prescribe: “El funcionario público que, abusando de sus atribuciones, comete u ordena un acto arbitrario que cause perjuicio a alguien será reprimido con pena privativa de libertad no mayor de tres años. Si los hechos derivan de un procedimiento de cobranza coactiva, la pena privativa de libertad será no menor de dos ni mayor de cuatro años”.
+
+                        Como se puede observar del desarrollo normativo, el legislador no aceptó la propuesta principal de la Corte Suprema, que exigía la causación de un grave perjuicio como presupuesto de tipicidad por razones de subsidiariedad y fragmentariedad penal[4] , y con la finalidad de evitar carga procesal innecesaria.
+
+                        La actuación del Congreso de la República fue contradictoria y ha supuesto un retroceso en el desarrollo de la regulación legal del delito de abuso de autoridad, puesto que si bien reconoce en su Dictamen que “los casos de perjuicio no grave son materia de dilucidación administrativa, en invocación del principio de última ratio que orienta la injerencia punitiva”; sin embargo, y en contra de este entendimiento, termina desaprobando tal extremo de la propuesta en base a estimaciones infundadas de posible inversión de la carga de la prueba por presuntos problemas disfuncionales del Ministerio Público y, consecuentemente, anunciada eventual impunidad.
+
+                        Actualmente se puede observar un desarrollo orientado a retomar el carácter subsidiario y fragmentario del Derecho penal en la construcción del tipo penal de abuso de autoridad. Así, en las diversas propuestas legislativas, como el Anteproyecto del Código Penal Peruano 2008-2010, el Proyecto de Ley del Nuevo Código Penal del año 2014 y hasta en el Dictamen de la Comisión de Justicia y Derechos Humanos recaído en dicho Proyecto, se propone que para la configuración del delito de abuso de autoridad se verifique un acto arbitrario que cause no cualquier perjuicio, sino uno grave.
+                        Son signos claros de la evolución orientada a limitar la aplicación del tipo a casos graves de abuso de funciones públicas y dejar al Derecho administrativo disciplinario los casos de menor gravedad.
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3">
+                <div class="publicacion-autor rounded">
+                    <div class="publicacion-autor__card">
+                        <img class="rounded mx-auto d-block rounded-circle publicacion-autor__img" src="./apps/img/author/raul-pariona1.jpg" alt="">
+                        <div class="mt-3 d-flex flex-column">
+                            <span class="fw-bold text-center">Prof. Dr. iur.</span>
+                            <h3 class="fw-bold text-center publicacion-autor__name">Raúl Pariona Arana</h3>
+                            <a class="text-center card-equipo__data card-equipo__data--email" href=""><i class="fas fa-envelope"></i> rpariona@rpa.pe</a>
+                        </div>
+                    </div>
+                    <div class="rounded-bottom publicacion-autor__share">
+                        <div class="share d-lg-flex flex-lg-column">
+                            <a href="#" class="btn btn-primary share__button share__button--detailpubli"><i class="fas fa-file-download"></i> Descargar</a>
+                            <div class="mt-lg-2">
+                                <a class="me-2 social__link social__link social__link--detailpubli" href=""><i class="fab fa-facebook-square"></i></a>
+                                <a class="me-2 social__link social__link social__link--detailpubli" href=""><i class="fab fa-twitter-square"></i></a>
+                                <a class="me-2 social__link social__link social__link--detailpubli" href=""><i class="fab fa-facebook-messenger"></i></a>
+                                <a class="me-2 social__link social__link social__link--detailpubli" href=""><i class="fab fa-whatsapp"></i></a>
+                                <a class="social__link social__link social__link--detailpubli" href=""><i class="fas fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="container-fluid pie-pagina">
+        <div class="row appreciation">
+            <div class="col-12 col-lg-4 appreciation__container">
+                <h1 class="appreciation__title">RECONOCIMIENTOS</h1>
+            </div>
+            <div class="col-12 col-lg-8">
+                <p></p>
+            </div>
+        </div>
+        <div class="row pie-pagina__container">
+            <div class="col-12 col-lg-4 pie-pagina__data">
+                <img class="pie-pagina__logo" src="./apps/img/logo/logo.png" alt="">
+                <div class="pie-pagina__text">
+                    El Estudio Pariona Abogados es una firma de abogados especializada en Derecho Penal.<br>
+                    Uno de sus principales ámbitos de acción es el Derecho Penal Económico y de la Empresa, así como el Corporate Defense y Compliance, que brinda servicios legales de excelencia.
+                </div>
+            </div>
+            <div class="col-12 col-lg-8 pie-pagina__information">
+                <div class="pie-pagina__menu">
+                    <h5 class="pie-pagina__title fw-bold">ACCESO RÁPIDO</h5>
+                    <nav class="pie-pagina__nav">
+                        <ul class="pie-pagina__list">
+                            <li class="pie-pagina__element">
+                                <a class="menu__item pie-pagina__link" href="">La firma</a>
+                            </li>
+                            <li class="pie-pagina__element">
+                                <a class="menu__item pie-pagina__link" href="">Especialidades</a>
+                            </li>
+                            <li class="pie-pagina__element">
+                                <a class="menu__item pie-pagina__link" href="">Equipo</a>
+                            </li>
+                            <li class="pie-pagina__element">
+                                <a class="menu__item pie-pagina__link" href="">Publicaciones</a>
+                            </li>
+                            <li class="pie-pagina__element">
+                                <a class="menu__item pie-pagina__link" href="">Actualidad</a>
+                            </li>
+                            <li class="pie-pagina__element">
+                                <a class="menu__item pie-pagina__link" href="">Cátedra</a>
+                            </li>
+                            <li class="pie-pagina__element">
+                                <a class="menu__item pie-pagina__link" href="">Contacto</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="pie-pagina__contact">
+                    <h5 class="pie-pagina__title fw-bold">CONTACTO</h5>
+                    <p class="pie-pagina__office"><i class="fas fa-map-marker-alt pie-pagina__icon"></i>Jr. Lampa Nro. 879  Oficinas 504 - 506 Cercado de Lima (Perú)</p>
+                    <p class="pie-pagina__office"><i class="fas fa-phone-volume pie-pagina__icon"></i>(01)4261037 - 987407711</p>
+                    <a class="pie-pagina__email" href=""><i class="fas fa-envelope pie-pagina__icon"></i>pariona@rpa.pe</a>
+                    <div class="social__container pie-pagina__social">
+                        <a class="social__link social__link--desktop social__link--size social__link--color" href=""><i class="fab fa-facebook-square"></i></a>
+                        <a class="social__link social__link--desktop social__link--size social__link--color" href=""><i class="fab fa-twitter-square"></i></a>
+                        <a class="social__link social__link--desktop social__link--size social__link--color" href=""><i class="fab fa-facebook-messenger"></i></a>
+                        <a class="social__link social__link--desktop social__link--size social__link--color" href=""><i class="fab fa-whatsapp"></i></a>
+                        <a class="social__link social__link--desktop social__link--size social__link--color" href=""><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="./apps/js/rpa.js"></script>
+</body>
+</html>

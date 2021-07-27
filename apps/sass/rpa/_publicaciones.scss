@@ -1,0 +1,40 @@
+.publicacion-autor{
+    background-color: white;
+    @include desktop{
+        position: sticky;
+        top: 12rem;
+    }
+    @include desktop-large{
+        top: 13rem;
+    }
+    @include desktop-xlarge{
+        top: 14rem;
+    }
+    &__card{
+        padding: 3rem 4rem;
+        @include desktop{
+            padding: 2rem .5rem;
+        }
+    }
+    &__img{
+        height: $altimgauthor;
+        width: $altimgauthor;
+        @include desktop{
+            height: calc(#{$altimgauthor} - (#{$altimgauthor} * 0.4));
+            width: calc(#{$altimgauthor} - (#{$altimgauthor} * 0.4));
+        }
+    }
+    &__name{
+        @include font-size(1.5rem);
+        @include desktop-xxlarge{
+            @include font-size(1.75rem);
+        }
+    }
+    &__share{
+        background-color: $colorprincipal;
+        padding: .7rem .5rem;
+    }
+}
+.publicacion-contenido{
+    background-color: white;
+}

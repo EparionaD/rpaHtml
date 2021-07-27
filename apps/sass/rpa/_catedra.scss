@@ -1,0 +1,113 @@
+.catedra{
+    &__card{
+        height: auto;
+        @include desktop{
+            height: 550px;
+        }
+        @include desktop-large{
+            height: 600px;
+        }
+        @include desktop-xlarge{
+            height: 650px;
+        }
+        @include desktop-xlarge{
+            height: 750px;
+        }
+    }
+    &__container{
+        border-top-right-radius: 0;
+        border-bottom-left-radius: .5rem;
+        border-bottom-right-radius: .5rem;
+        @include desktop{
+            border-top-right-radius: .5rem;
+            border-bottom-right-radius: .5rem;
+        }
+        &--thumbnail{
+            border-top-right-radius: 0;
+        }
+    }
+    &__img{
+        width: 100%;
+        border-top-left-radius: .5rem;
+        border-top-right-radius: .5rem;
+        border-bottom-left-radius: 0 !important;
+        @include tablet{
+            border-bottom-left-radius: .5rem !important;
+            border-top-right-radius: 0;
+        }
+        @include desktop{
+            width: 100%;
+            border-top-left-radius: .5rem;
+            border-bottom-left-radius: .5rem;
+            border-top-right-radius: 0;
+        }
+        &--thumbnail{
+            border-bottom-left-radius: 0 !important;
+            border-top-right-radius: .5rem;
+        }
+        &--principal{
+            width: 100%;
+            @include desktop{
+                width: 50%;
+            }
+        }
+    }
+    &__title{
+        font-size: calc(1.1rem + 1vw);
+        @include desktop{
+            font-size: calc(1.3rem + .6vw);
+        }
+        @include desktop-xxlarge{
+            font-size: 2.2rem;
+        }
+        &--tam{
+            @include desktop{
+                font-size: calc(1rem + .5vw);
+            }
+            @include desktop-xxlarge{
+                font-size: 1.9rem;
+            }
+        }
+    }
+    &__summary{
+        @include desktop{
+            font-size: .9rem;
+            width: 70%;
+        }
+        @include desktop-xlarge{
+            font-size: 1.1rem;
+        }
+    }
+}
+.catedra-detalle{
+    &__button{
+        font-size: 1.3rem;
+    }
+    &__ponente{
+        width: auto;
+        @include desktop{
+            width: 70%;
+        }
+    }
+    &__title{
+        display: inline-block;
+        position: relative;
+        width: auto;
+        @include desktop{
+            width: max-content;
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            width: 70%;
+            bottom: 0;
+            left: 0%;
+            border-bottom: 1px solid $colorprincipal;
+        }
+    }
+}
+.link-catedra{
+    &:hover{
+        color: $colorprincipaloscuro;
+    }
+}
