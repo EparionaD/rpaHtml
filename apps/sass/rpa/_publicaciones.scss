@@ -15,6 +15,9 @@
         @include desktop{
             padding: 2rem .5rem;
         }
+        @include desktop-xxlarge{
+            padding: 2rem 3rem;
+        }
     }
     &__img{
         height: $altimgauthor;
@@ -37,4 +40,7 @@
 }
 .publicacion-contenido{
     background-color: white;
+    &--catedra{
+        background-color: $colorsecundario;
+    }
 }

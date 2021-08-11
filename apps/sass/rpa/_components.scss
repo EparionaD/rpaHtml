@@ -32,7 +32,7 @@
         &:hover{
             color: $colorprincipal;
         }
-        @include font-size(2.5rem);
+        @include font-size(2.2rem);
     }
     &__text{
         font-size: .9rem;
@@ -111,11 +111,11 @@
         }
     }
     &--actualidad{
-        padding-top: 22rem;
+        padding-top: 17rem;
         @include desktop{
             padding-left: 6rem;
             padding-top: 18rem;
-            width: 65%;
+            width: 75%;
         }
         @include desktop-large{
             padding-left: 8rem;
@@ -123,11 +123,11 @@
         }
         @include desktop-xlarge{
             padding-left: 8rem;
-            padding-top: 20rem;
+            padding-top: 22rem;
         }
         @include desktop-xxlarge{
             padding-left: 10rem;
-            padding-top: 30rem;
+            padding-top: 28rem;
         }
     }
 }
@@ -360,4 +360,18 @@
     @include desktop-xlarge{
         height: 665px;
     }
+}
+.calendario-f{
+    font-size: .9rem;
+}
+.button-publicacion{
+    color: black;
+    &:hover{
+        color: $colorprincipal;
+    }
+}
+
+.icon-especialidad{
+    background-color: $colorsecundario;
+    border: 4px solid white;
 }
