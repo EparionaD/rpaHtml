@@ -15,6 +15,7 @@
     <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./apps/css/glider.css">
 
     <link rel="stylesheet" href="./apps/css/bootstrap.css">
     <link rel="stylesheet" href="./apps/css/rpa.css">
@@ -86,68 +87,251 @@
         </div>
     </header>
     <main class="container-fluid espaciado">
-        <div class="row">
-            <div class="col-12 d-flex justify-content-center mb-5">
-                <ul class="nav nav-pills mb-3 shadow component-tab__ul bg-white" id="pills-tab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link fw-bold publicacion-inicio__button active" id="pills-jurisprudencia-tab" data-bs-toggle="pill" data-bs-target="#pills-jurisprudencia" type="button" role="tab" aria-controls="pills-cujurisprudenciarsos" aria-selected="true">Jurisprudencia</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link fw-bold publicacion-inicio__button" id="pills-boletines-tab" data-bs-toggle="pill" data-bs-target="#pills-boletines" type="button" role="tab" aria-controls="pills-boletines" aria-selected="false">Boletines</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link fw-bold publicacion-inicio__button" id="pills-articulos-tab" data-bs-toggle="pill" data-bs-target="#pills-articulos" type="button" role="tab" aria-controls="pills-articulos" aria-selected="false">Artículos</button>
-                    </li>
-                </ul>
+        <div class="row p-3 p-sm-0">
+            <div class="col-12 d-flex justify-content-between mb-3 p-0">
+                <a href="" class="btn btn-primary me-5">Jurisprudencia</a>
+                <a href="" class="align-self-center ver-mas">Ver más</a>
             </div>
-            <div class="col-12">
-                <div class="tab-content" id="pills-tabContent">
-                    <div class="tab-pane fade show active" id="pills-jurisprudencia" role="tabpanel" aria-labelledby="pills-jurisprudencia-tab">
-                        <div class="row">
-                            <div class="col-12 col-lg-4">
-                                <div class="card card-inicio">
-                                    <img src="./apps/img/index/especialidad.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <p class="card-inicio__date">17/05/2021</p>
-                                        <a class="card-title fw-bold card-inicio__title" href="">El delito de abuso de autoridad. Consideraciones dogmáticas y político criminales</a>
-                                        <p class="fw-bold card-inicio__author">Por: Raúl Pariona</p>
-                                        <p class="card-text">En un Estado democrático de Derecho, el poder nunca es absoluto, sino más bien limitado. En ese sentido, cuando los funcionarios públicos se exceden en sus funciones o atribuciones, corresponde una reacción de parte del ordenamiento.</p>
-                                        <p class="card-text">En el presente artículo, el autor realiza una explicación y un análisis sobre el delito de abuso de autoridad. De acuerdo a la doctrina nacional e internacional, y a la jurisprudencia peruana, el autor señala cómo entender el bien jurídico que se protege, la tipicidad objetiva y subjetiva, los sujetos activo y pasivo, así como la pena en este delito.</p>
-                                        <div class="share">
-                                            <a href="#" class="btn btn-primary share__button me-3"><i class="fas fa-file-download"></i> Descargar</a>
-                                            <a class="share__link" href=""><i class="fab fa-facebook-square share__icon share__icon--facebook"></i></a>
-                                            <a class="share__link" href=""><i class="fab fa-twitter-square share__icon share__icon--twitter"></i></a>
-                                            <a class="share__link" href=""><i class="fab fa-linkedin share__icon share__icon--linkedin"></i></a>
-                                            <a class="share__link" href=""><i class="fab fa-whatsapp share__icon share__icon--whatsapp"></i></a>
-                                            <a class="share__link" onclick="Links()" id="enlace"><i class="fas fa-link share__icon share__icon--link"></i></a>
-                                            <div class="alert alert-warning alert-dismissible fade show position-absolute start-50 translate-middle animate__animated d-none link-copy" role="alert" id="alerta">
-                                                <strong>Enlace copiado!</strong>
-                                            </div>
+            <div class="carousel">
+                <div class="carousel__container">
+                    <button aria-label="Anterior" class="carousel__anterior jurisprudencia-anterior">
+                        <i class="fas fa-angle-left"></i>
+                    </button>
+                    <div class="row carousel__list jurisprudencia">
+                        <div class="col-12 col-lg-4">
+                            <div class="card card-inicio">
+                                <img src="./apps/img/index/especialidad.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-inicio__date">17/05/2021</p>
+                                    <a class="card-title fw-bold card-inicio__title" href="">El delito de abuso de autoridad. Consideraciones dogmáticas y político criminales</a>
+                                    <p class="fw-bold card-inicio__author">Por: Raúl Pariona</p>
+                                    <div class="share">
+                                        <a href="#" class="btn btn-primary share__button me-3"><i class="fas fa-file-download"></i> Descargar</a>
+                                        <a class="share__link" href=""><i class="fab fa-facebook-square share__icon share__icon--facebook"></i></a>
+                                        <a class="share__link" href=""><i class="fab fa-twitter-square share__icon share__icon--twitter"></i></a>
+                                        <a class="share__link" href=""><i class="fab fa-linkedin share__icon share__icon--linkedin"></i></a>
+                                        <a class="share__link" href=""><i class="fab fa-whatsapp share__icon share__icon--whatsapp"></i></a>
+                                        <a class="share__link" onclick="Links()" id="enlace"><i class="fas fa-link share__icon share__icon--link"></i></a>
+                                        <div class="alert alert-warning alert-dismissible fade show position-absolute start-50 translate-middle animate__animated d-none link-copy" role="alert" id="alerta">
+                                            <strong>Enlace copiado!</strong>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <nav class="mt-4" aria-label="Page navigation example">
-                            <ul class="pagination">
-                                <li class="page-item disabled">
-                                    <a class="page-link" href="#" aria-label="Previous">
-                                    <span aria-hidden="true">&laquo;</span>
-                                    </a>
-                                </li>
-                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Next">
-                                    <span aria-hidden="true">&raquo;</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
+                        <div class="col-12 col-lg-4">
+                            <div class="card card-inicio">
+                                <img src="./apps/img/index/especialidad.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-inicio__date">17/05/2021</p>
+                                    <a class="card-title fw-bold card-inicio__title" href="">El delito de abuso de autoridad. Consideraciones dogmáticas y político criminales</a>
+                                    <p class="fw-bold card-inicio__author">Por: Raúl Pariona</p>
+                                    <div class="share">
+                                        <a href="#" class="btn btn-primary share__button me-3"><i class="fas fa-file-download"></i> Descargar</a>
+                                        <a class="share__link" href=""><i class="fab fa-facebook-square share__icon share__icon--facebook"></i></a>
+                                        <a class="share__link" href=""><i class="fab fa-twitter-square share__icon share__icon--twitter"></i></a>
+                                        <a class="share__link" href=""><i class="fab fa-linkedin share__icon share__icon--linkedin"></i></a>
+                                        <a class="share__link" href=""><i class="fab fa-whatsapp share__icon share__icon--whatsapp"></i></a>
+                                        <a class="share__link" onclick="Links()" id="enlace"><i class="fas fa-link share__icon share__icon--link"></i></a>
+                                        <div class="alert alert-warning alert-dismissible fade show position-absolute start-50 translate-middle animate__animated d-none link-copy" role="alert" id="alerta">
+                                            <strong>Enlace copiado!</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="card card-inicio">
+                                <img src="./apps/img/index/especialidad.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-inicio__date">17/05/2021</p>
+                                    <a class="card-title fw-bold card-inicio__title" href="">El delito de abuso de autoridad. Consideraciones dogmáticas y político criminales</a>
+                                    <p class="fw-bold card-inicio__author">Por: Raúl Pariona</p>
+                                    <div class="share">
+                                        <a href="#" class="btn btn-primary share__button me-3"><i class="fas fa-file-download"></i> Descargar</a>
+                                        <a class="share__link" href=""><i class="fab fa-facebook-square share__icon share__icon--facebook"></i></a>
+                                        <a class="share__link" href=""><i class="fab fa-twitter-square share__icon share__icon--twitter"></i></a>
+                                        <a class="share__link" href=""><i class="fab fa-linkedin share__icon share__icon--linkedin"></i></a>
+                                        <a class="share__link" href=""><i class="fab fa-whatsapp share__icon share__icon--whatsapp"></i></a>
+                                        <a class="share__link" onclick="Links()" id="enlace"><i class="fas fa-link share__icon share__icon--link"></i></a>
+                                        <div class="alert alert-warning alert-dismissible fade show position-absolute start-50 translate-middle animate__animated d-none link-copy" role="alert" id="alerta">
+                                            <strong>Enlace copiado!</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="card card-inicio">
+                                <img src="./apps/img/index/especialidad.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-inicio__date">17/05/2021</p>
+                                    <a class="card-title fw-bold card-inicio__title" href="">El delito de abuso de autoridad. Consideraciones dogmáticas y político criminales</a>
+                                    <p class="fw-bold card-inicio__author">Por: Raúl Pariona</p>
+                                    <div class="share">
+                                        <a href="#" class="btn btn-primary share__button me-3"><i class="fas fa-file-download"></i> Descargar</a>
+                                        <a class="share__link" href=""><i class="fab fa-facebook-square share__icon share__icon--facebook"></i></a>
+                                        <a class="share__link" href=""><i class="fab fa-twitter-square share__icon share__icon--twitter"></i></a>
+                                        <a class="share__link" href=""><i class="fab fa-linkedin share__icon share__icon--linkedin"></i></a>
+                                        <a class="share__link" href=""><i class="fab fa-whatsapp share__icon share__icon--whatsapp"></i></a>
+                                        <a class="share__link" onclick="Links()" id="enlace"><i class="fas fa-link share__icon share__icon--link"></i></a>
+                                        <div class="alert alert-warning alert-dismissible fade show position-absolute start-50 translate-middle animate__animated d-none link-copy" role="alert" id="alerta">
+                                            <strong>Enlace copiado!</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="card card-inicio">
+                                <img src="./apps/img/index/especialidad.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-inicio__date">17/05/2021</p>
+                                    <a class="card-title fw-bold card-inicio__title" href="">El delito de abuso de autoridad. Consideraciones dogmáticas y político criminales</a>
+                                    <p class="fw-bold card-inicio__author">Por: Raúl Pariona</p>
+                                    <div class="share">
+                                        <a href="#" class="btn btn-primary share__button me-3"><i class="fas fa-file-download"></i> Descargar</a>
+                                        <a class="share__link" href=""><i class="fab fa-facebook-square share__icon share__icon--facebook"></i></a>
+                                        <a class="share__link" href=""><i class="fab fa-twitter-square share__icon share__icon--twitter"></i></a>
+                                        <a class="share__link" href=""><i class="fab fa-linkedin share__icon share__icon--linkedin"></i></a>
+                                        <a class="share__link" href=""><i class="fab fa-whatsapp share__icon share__icon--whatsapp"></i></a>
+                                        <a class="share__link" onclick="Links()" id="enlace"><i class="fas fa-link share__icon share__icon--link"></i></a>
+                                        <div class="alert alert-warning alert-dismissible fade show position-absolute start-50 translate-middle animate__animated d-none link-copy" role="alert" id="alerta">
+                                            <strong>Enlace copiado!</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="tab-pane fade" id="pills-boletines" role="tabpanel" aria-labelledby="pills-boletines-tab">tab2</div>
-                    <div class="tab-pane fade" id="pills-articulos" role="tabpanel" aria-labelledby="pills-articulos-tab">tab3</div>
+                    <button aria-label="Siguiente" class="carousel__siguiente jurisprudencia-siguiente">
+                        <i class="fas fa-angle-right"></i>
+                    </button>
+                    <div role="tablist" class="carousel__dots jurisprudencia-dots"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row p-3 p-sm-0 mt-3">
+            <div class="col-12 d-flex justify-content-between mb-3 p-0">
+                <a href="" class="btn btn-primary me-5">Boletines</a>
+                <a href="" class="align-self-center ver-mas">Ver más</a>
+            </div>
+            <div class="carousel">
+                <div class="carousel__container">
+                    <button aria-label="Anterior" class="carousel__anterior boletines-anterior">
+                        <i class="fas fa-angle-left"></i>
+                    </button>
+                    <div class="row carousel__list boletines">
+                        <div class="col-12 col-lg-4">
+                            <div class="card card-inicio">
+                                <img src="./apps/img/index/especialidad.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-inicio__date">17/05/2021</p>
+                                    <a class="card-title fw-bold card-inicio__title" href="">El delito de abuso de autoridad. Consideraciones dogmáticas y político criminales</a>
+                                    <p class="fw-bold card-inicio__author">Por: Raúl Pariona</p>
+                                    <div class="share">
+                                        <a href="#" class="btn btn-primary share__button me-3"><i class="fas fa-file-download"></i> Descargar</a>
+                                        <a class="share__link" href=""><i class="fab fa-facebook-square share__icon share__icon--facebook"></i></a>
+                                        <a class="share__link" href=""><i class="fab fa-twitter-square share__icon share__icon--twitter"></i></a>
+                                        <a class="share__link" href=""><i class="fab fa-linkedin share__icon share__icon--linkedin"></i></a>
+                                        <a class="share__link" href=""><i class="fab fa-whatsapp share__icon share__icon--whatsapp"></i></a>
+                                        <a class="share__link" onclick="Links()" id="enlace"><i class="fas fa-link share__icon share__icon--link"></i></a>
+                                        <div class="alert alert-warning alert-dismissible fade show position-absolute start-50 translate-middle animate__animated d-none link-copy" role="alert" id="alerta">
+                                            <strong>Enlace copiado!</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="card card-inicio">
+                                <img src="./apps/img/index/especialidad.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-inicio__date">17/05/2021</p>
+                                    <a class="card-title fw-bold card-inicio__title" href="">El delito de abuso de autoridad. Consideraciones dogmáticas y político criminales</a>
+                                    <p class="fw-bold card-inicio__author">Por: Raúl Pariona</p>
+                                    <div class="share">
+                                        <a href="#" class="btn btn-primary share__button me-3"><i class="fas fa-file-download"></i> Descargar</a>
+                                        <a class="share__link" href=""><i class="fab fa-facebook-square share__icon share__icon--facebook"></i></a>
+                                        <a class="share__link" href=""><i class="fab fa-twitter-square share__icon share__icon--twitter"></i></a>
+                                        <a class="share__link" href=""><i class="fab fa-linkedin share__icon share__icon--linkedin"></i></a>
+                                        <a class="share__link" href=""><i class="fab fa-whatsapp share__icon share__icon--whatsapp"></i></a>
+                                        <a class="share__link" onclick="Links()" id="enlace"><i class="fas fa-link share__icon share__icon--link"></i></a>
+                                        <div class="alert alert-warning alert-dismissible fade show position-absolute start-50 translate-middle animate__animated d-none link-copy" role="alert" id="alerta">
+                                            <strong>Enlace copiado!</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="card card-inicio">
+                                <img src="./apps/img/index/especialidad.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-inicio__date">17/05/2021</p>
+                                    <a class="card-title fw-bold card-inicio__title" href="">El delito de abuso de autoridad. Consideraciones dogmáticas y político criminales</a>
+                                    <p class="fw-bold card-inicio__author">Por: Raúl Pariona</p>
+                                    <div class="share">
+                                        <a href="#" class="btn btn-primary share__button me-3"><i class="fas fa-file-download"></i> Descargar</a>
+                                        <a class="share__link" href=""><i class="fab fa-facebook-square share__icon share__icon--facebook"></i></a>
+                                        <a class="share__link" href=""><i class="fab fa-twitter-square share__icon share__icon--twitter"></i></a>
+                                        <a class="share__link" href=""><i class="fab fa-linkedin share__icon share__icon--linkedin"></i></a>
+                                        <a class="share__link" href=""><i class="fab fa-whatsapp share__icon share__icon--whatsapp"></i></a>
+                                        <a class="share__link" onclick="Links()" id="enlace"><i class="fas fa-link share__icon share__icon--link"></i></a>
+                                        <div class="alert alert-warning alert-dismissible fade show position-absolute start-50 translate-middle animate__animated d-none link-copy" role="alert" id="alerta">
+                                            <strong>Enlace copiado!</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="card card-inicio">
+                                <img src="./apps/img/index/especialidad.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-inicio__date">17/05/2021</p>
+                                    <a class="card-title fw-bold card-inicio__title" href="">El delito de abuso de autoridad. Consideraciones dogmáticas y político criminales</a>
+                                    <p class="fw-bold card-inicio__author">Por: Raúl Pariona</p>
+                                    <div class="share">
+                                        <a href="#" class="btn btn-primary share__button me-3"><i class="fas fa-file-download"></i> Descargar</a>
+                                        <a class="share__link" href=""><i class="fab fa-facebook-square share__icon share__icon--facebook"></i></a>
+                                        <a class="share__link" href=""><i class="fab fa-twitter-square share__icon share__icon--twitter"></i></a>
+                                        <a class="share__link" href=""><i class="fab fa-linkedin share__icon share__icon--linkedin"></i></a>
+                                        <a class="share__link" href=""><i class="fab fa-whatsapp share__icon share__icon--whatsapp"></i></a>
+                                        <a class="share__link" onclick="Links()" id="enlace"><i class="fas fa-link share__icon share__icon--link"></i></a>
+                                        <div class="alert alert-warning alert-dismissible fade show position-absolute start-50 translate-middle animate__animated d-none link-copy" role="alert" id="alerta">
+                                            <strong>Enlace copiado!</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="card card-inicio">
+                                <img src="./apps/img/index/especialidad.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-inicio__date">17/05/2021</p>
+                                    <a class="card-title fw-bold card-inicio__title" href="">El delito de abuso de autoridad. Consideraciones dogmáticas y político criminales</a>
+                                    <p class="fw-bold card-inicio__author">Por: Raúl Pariona</p>
+                                    <div class="share">
+                                        <a href="#" class="btn btn-primary share__button me-3"><i class="fas fa-file-download"></i> Descargar</a>
+                                        <a class="share__link" href=""><i class="fab fa-facebook-square share__icon share__icon--facebook"></i></a>
+                                        <a class="share__link" href=""><i class="fab fa-twitter-square share__icon share__icon--twitter"></i></a>
+                                        <a class="share__link" href=""><i class="fab fa-linkedin share__icon share__icon--linkedin"></i></a>
+                                        <a class="share__link" href=""><i class="fab fa-whatsapp share__icon share__icon--whatsapp"></i></a>
+                                        <a class="share__link" onclick="Links()" id="enlace"><i class="fas fa-link share__icon share__icon--link"></i></a>
+                                        <div class="alert alert-warning alert-dismissible fade show position-absolute start-50 translate-middle animate__animated d-none link-copy" role="alert" id="alerta">
+                                            <strong>Enlace copiado!</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button aria-label="Siguiente" class="carousel__siguiente boletines-siguiente">
+                        <i class="fas fa-angle-right"></i>
+                    </button>
+                    <div role="tablist" class="carousel__dots boletines-dots"></div>
                 </div>
             </div>
         </div>
@@ -216,6 +400,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="./apps/js/glider.js"></script>
     <script src="./apps/js/rpa.js"></script>
 </body>
 </html>

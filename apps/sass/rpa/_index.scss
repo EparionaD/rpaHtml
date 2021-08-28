@@ -83,7 +83,8 @@
 //     }
 // }
 .firma-especialidades{
-    background-image: linear-gradient(to right top, #ababab, #bababa, #cacaca, #d9d9d9, #e9e9e9, #ebebeb, #eeeeee, #f0f0f0, #e5e5e5, #dadada, #d0d0d0, #c5c5c5);
+    // background-image: linear-gradient(to right top, #ababab, #bababa, #cacaca, #d9d9d9, #e9e9e9, #ebebeb, #eeeeee, #f0f0f0, #e5e5e5, #dadada, #d0d0d0, #c5c5c5);
+    background-color: $colorsecundariooscuro;
     padding-top: 10rem;
     padding-bottom: 2rem;
     padding-left: .5rem;
@@ -245,7 +246,7 @@
         font-size: .9rem;
         margin-bottom: 0;
         @include desktop-xxlarge{
-            margin-bottom: 1rem;
+            margin-bottom: .7rem;
         }
     }
     &__title{
@@ -256,9 +257,9 @@
             font-size: 1.2rem;
         }
         &--principal{
-            font-size: 1.45rem;
+            font-size: 1.6rem;
             @include desktop-xxlarge{
-                font-size: 1.55rem;
+                font-size: 1.7rem;
             }
         }
     }

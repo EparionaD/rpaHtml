@@ -72,14 +72,14 @@
     &__logo{
         height: 80px;
     }
-    &__menu{
-        @include desktop{
-            width: 40%;
-        }
-        @include desktop-large{
-            width: 35%;
-        }
-    }
+    // &__menu{
+    //     @include desktop{
+    //         width: 40%;
+    //     }
+    //     @include desktop-large{
+    //         width: 35%;
+    //     }
+    // }
     &__office{
         color: white;
         margin-bottom: 0;

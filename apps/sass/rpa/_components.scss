@@ -349,16 +349,30 @@
 }
 .card-alto{
     @include desktop{
-        height: 672px;
+        height: 524px;
     }
     @include desktop-large{
-        height: 645px;
+        height: 473px;
     }
     @include desktop-xlarge{
-        height: 645px;
+        height: 495px;
     }
     @include desktop-xlarge{
-        height: 665px;
+        height: 518px;
+    }
+}
+.card-alto-catedra{
+    @include desktop{
+        height: 545px;
+    }
+    @include desktop-large{
+        height: 522px;
+    }
+    @include desktop-xlarge{
+        height: 525px;
+    }
+    @include desktop-xlarge{
+        height: 560px;
     }
 }
 .calendario-f{
@@ -374,4 +388,81 @@
 .icon-especialidad{
     background-color: $colorsecundario;
     border: 4px solid white;
+}
+.border-catedra{
+    border: 2px solid white;
+}
+.titulo-catedra{
+    font-size: 2.8rem;
+}
+.descripcion-catedra{
+    font-size: 1.3rem;
+}
+.oscuridad{
+    &::before{
+        background:rgba(0,0,0,.3) !important;
+    }
+}
+.estilo-contenido *{
+    font-size: 1rem !important;
+    font-family: 'Quicksand', sans-serif !important;
+}
+
+.carousel{
+    &__anterior{
+        left: -25px;
+        @include celular{
+            left: -42px;
+        }
+    }
+    &__container{
+        position: relative;
+    }
+    &__list{
+        overflow: hidden;
+    }
+    &__siguiente{
+        right: -25px;
+        @include celular{
+            right: -42px;
+        }
+    }
+}
+.carousel__anterior,
+.carousel__siguiente{
+    border: 2px rgba($color: $colorprincipal, $alpha: .5);
+    cursor: pointer;
+    color: $colorprincipal;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    opacity: 80%;
+    top: calc(50% - 35px);
+    width: 30px;
+    z-index: 150;
+}
+
+.carousel__dots > .glider-dot{
+    &:hover{
+        background-color: $colorprincipal;
+    }
+}
+.carousel__dots > .glider-dot.active{
+    background-color: $colorprincipal;
+}
+.carousel__list > .glider-track{
+    padding: 0 !important;
+}
+.ver-mas{
+    border: 1px solid $colorsecundariooscuro;
+    border-radius: 5px;
+    color: black;
+    padding: .2rem .5rem;
+    text-decoration: none;
+    &:hover{
+        color: $colorprincipal;
+        background-color: white;
+        border: 1px solid $colorprincipal;
+    }
 }

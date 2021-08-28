@@ -103,3 +103,88 @@ function Links(){
     agregarAlerta()
     setTimeout(quitarAlerta,2000)
 }
+
+window.addEventListener('load',function(){
+    // document.querySelector('.glider').addEventListener('glider-slide-visible', function(event){
+    //     var glider = Glider(this);
+    //     console.log('Slide Visible %s', event.detail.slide)
+    // });
+    // document.querySelector('.glider').addEventListener('glider-slide-hidden', function(event){
+    //     console.log('Slide Hidden %s', event.detail.slide)
+    // });
+    // document.querySelector('.glider').addEventListener('glider-refresh', function(event){
+    //     console.log('Refresh')
+    // });
+    // document.querySelector('.glider').addEventListener('glider-loaded', function(event){
+    //     console.log('Loaded')
+    // });
+
+    window._ = new Glider(document.querySelector('.jurisprudencia'), {
+        slidesToShow: 1, //'auto',
+        slidesToScroll: 1,
+        scrollLock: true,
+        dots: '.jurisprudencia-dots',
+        rewind: true,
+        arrows: {
+            prev: '.jurisprudencia-anterior',
+            next: '.jurisprudencia-siguiente'
+        },
+        responsive:[
+            {
+                breakpoint:576,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint:992,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint:1800,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                }
+            }
+        ]
+    });
+    window._ = new Glider(document.querySelector('.boletines'), {
+        slidesToShow: 1, //'auto',
+        slidesToScroll: 1,
+        scrollLock: true,
+        dots: '.boletines-dots',
+        rewind: true,
+        arrows: {
+            prev: '.boletines-anterior',
+            next: '.boletines-siguiente'
+        },
+        responsive:[
+            {
+                breakpoint:576,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint:992,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint:1800,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                }
+            }
+        ]
+    });
+  });

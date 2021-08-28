@@ -442,22 +442,43 @@
 
 @media only screen and (min-width: 992px) {
   .card-alto {
-    height: 672px;
+    height: 524px;
   }
 }
 @media only screen and (min-width: 1200px) {
   .card-alto {
-    height: 645px;
+    height: 473px;
   }
 }
 @media only screen and (min-width: 1400px) {
   .card-alto {
-    height: 645px;
+    height: 495px;
   }
 }
 @media only screen and (min-width: 1400px) {
   .card-alto {
-    height: 665px;
+    height: 518px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .card-alto-catedra {
+    height: 545px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .card-alto-catedra {
+    height: 522px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .card-alto-catedra {
+    height: 525px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .card-alto-catedra {
+    height: 560px;
   }
 }
 
@@ -475,6 +496,90 @@
 .icon-especialidad {
   background-color: #EAEAEA;
   border: 4px solid white;
+}
+
+.border-catedra {
+  border: 2px solid white;
+}
+
+.titulo-catedra {
+  font-size: 2.8rem;
+}
+
+.descripcion-catedra {
+  font-size: 1.3rem;
+}
+
+.oscuridad::before {
+  background: rgba(0, 0, 0, 0.3) !important;
+}
+
+.estilo-contenido * {
+  font-size: 1rem !important;
+  font-family: "Quicksand", sans-serif !important;
+}
+
+.carousel__anterior {
+  left: -25px;
+}
+@media only screen and (min-width: 576px) {
+  .carousel__anterior {
+    left: -42px;
+  }
+}
+.carousel__container {
+  position: relative;
+}
+.carousel__list {
+  overflow: hidden;
+}
+.carousel__siguiente {
+  right: -25px;
+}
+@media only screen and (min-width: 576px) {
+  .carousel__siguiente {
+    right: -42px;
+  }
+}
+
+.carousel__anterior,
+.carousel__siguiente {
+  border: 2px rgba(212, 44, 48, 0.5);
+  cursor: pointer;
+  color: #D42C30;
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  position: absolute;
+  opacity: 80%;
+  top: calc(50% - 35px);
+  width: 30px;
+  z-index: 150;
+}
+
+.carousel__dots > .glider-dot:hover {
+  background-color: #D42C30;
+}
+
+.carousel__dots > .glider-dot.active {
+  background-color: #D42C30;
+}
+
+.carousel__list > .glider-track {
+  padding: 0 !important;
+}
+
+.ver-mas {
+  border: 1px solid #ababab;
+  border-radius: 5px;
+  color: black;
+  padding: 0.2rem 0.5rem;
+  text-decoration: none;
+}
+.ver-mas:hover {
+  color: #D42C30;
+  background-color: white;
+  border: 1px solid #D42C30;
 }
 
 h1, h2, h3, h4, h5, a {
@@ -804,7 +909,7 @@ p, div {
 
 /* Fin de Index */
 .firma-especialidades {
-  background-image: linear-gradient(to right top, #ababab, #bababa, #cacaca, #d9d9d9, #e9e9e9, #ebebeb, #eeeeee, #f0f0f0, #e5e5e5, #dadada, #d0d0d0, #c5c5c5);
+  background-color: #ababab;
   padding-top: 10rem;
   padding-bottom: 2rem;
   padding-left: 0.5rem;
@@ -1011,7 +1116,7 @@ p, div {
 }
 @media only screen and (min-width: 1800px) {
   .card-inicio__date {
-    margin-bottom: 1rem;
+    margin-bottom: 0.7rem;
   }
 }
 .card-inicio__title {
@@ -1025,11 +1130,11 @@ p, div {
   }
 }
 .card-inicio__title--principal {
-  font-size: 1.45rem;
+  font-size: 1.6rem;
 }
 @media only screen and (min-width: 1800px) {
   .card-inicio__title--principal {
-    font-size: 1.55rem;
+    font-size: 1.7rem;
   }
 }
 
@@ -1238,16 +1343,6 @@ p, div {
 .pie-pagina__logo {
   height: 80px;
 }
-@media only screen and (min-width: 992px) {
-  .pie-pagina__menu {
-    width: 40%;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .pie-pagina__menu {
-    width: 35%;
-  }
-}
 .pie-pagina__office {
   color: white;
   margin-bottom: 0;
@@ -1446,7 +1541,7 @@ p, div {
   }
 }
 .valores__container {
-  background-color: #D42C30;
+  background-color: #ababab;
   height: 100%;
 }
 @media only screen and (min-width: 1800px) {
@@ -1513,7 +1608,7 @@ p, div {
 }
 
 .espec-detalle__back {
-  background-color: #D42C30;
+  background-color: #ababab;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
   height: 95px;
@@ -1874,9 +1969,14 @@ p, div {
 .contacto__street {
   background-color: #f7f7f7;
   padding: 2rem 2rem;
-  border-bottom: 3px solid #9B070B;
+  border-bottom: 3px solid #ababab;
 }
 @media only screen and (min-width: 992px) {
+  .contacto__street {
+    padding: 1.5rem 3rem;
+  }
+}
+@media only screen and (min-width: 1800px) {
   .contacto__street {
     padding: 3rem 6rem;
   }
@@ -1951,6 +2051,8 @@ p, div {
 }
 .catedra__title {
   font-size: calc(1.1rem + 1vw);
+  color: black;
+  text-decoration: none;
 }
 @media only screen and (min-width: 992px) {
   .catedra__title {
@@ -1969,7 +2071,7 @@ p, div {
 }
 @media only screen and (min-width: 1800px) {
   .catedra__title--tam {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -2020,6 +2122,10 @@ p, div {
 
 .link-catedra:hover {
   color: #9B070B;
+}
+
+.heredar:nth-child(odd) {
+  background-color: white;
 }
 
 .publicacion-autor {

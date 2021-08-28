@@ -73,8 +73,11 @@
     &__street{
         background-color: $colorsecundarioclaro;
         padding: 2rem 2rem;
-        border-bottom: 3px solid $colorprincipaloscuro;
+        border-bottom: 3px solid $colorsecundariooscuro;
         @include desktop{
+            padding: 1.5rem 3rem;
+        }
+        @include desktop-xxlarge{
             padding: 3rem 6rem;
         }
     }
